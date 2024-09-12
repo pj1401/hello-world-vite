@@ -3,14 +3,19 @@
 För att starta applikationen:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Exempel utskrift:
 
 ```bash
-> hello-world@1.0.0 start
-> node src/app.js
+> hello-world-vite@1.0.0 dev
+> vite
 
-Hello, World!
+
+  VITE v5.4.4  ready in 393 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
 ```
