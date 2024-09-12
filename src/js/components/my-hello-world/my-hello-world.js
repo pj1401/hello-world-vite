@@ -4,6 +4,7 @@
  * @version 1.0.0
  */
 
+import { cssTemplate } from './my-hello-world.css.js'
 import { htmlTemplate } from './my-hello-world.html.js'
 
 customElements.define('my-hello-world',
@@ -20,7 +21,10 @@ customElements.define('my-hello-world',
       // Attach a shadow DOM tree to this custom element and
       // append the templates to the shadow root.
       this.attachShadow({ mode: 'open' })
+      this.shadowRoot.appendChild(cssTemplate.content.cloneNode(true))
       this.shadowRoot.appendChild(htmlTemplate.content.cloneNode(true))
+
+      this.shadowRoot.querySelector('h2').textContent = 'Hello World Component!'
     }
   }
 )
