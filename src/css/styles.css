@@ -5,3 +5,10 @@ body {
 my-hello-world.backside-pink::part(back) {
   background: #FFC0CB;
 }
+
+my-hello-world.text-white::part(text) {
+	color: #ffffff
+}
+my-hello-world.text-white::part(back) {
+	background: #470026
+}
